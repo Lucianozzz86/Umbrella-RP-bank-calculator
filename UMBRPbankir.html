@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор банкира</title>
+</head>
+<body>
+<h1>Калькулятор банкира для UmbrellaRP by Lucianozzz</h1>
+<br>
+    <script>
+        var money=Number(window.prompt("Введите сумму, которую производит принтер")) //Сумма, которую производит принтер
+        var procent=Number(window.prompt("Введите ваш процент с прибыли принтера")) //Процент с прибыли принтера
+        window.alert("Таймер будет запущен после подтверждения")
+        var clientsmoney=(money-((money/100)*procent)) //Деньги, которые  нужно отдать клиенту
+        let pribil = setInterval(() => alert(money/100*procent), 200000) // повторить с интервалом 200 секунд
+        document.write("Сумма, отдаваймая клиенту банка = "+(clientsmoney))
+    </script>
+</body>
+</html>
